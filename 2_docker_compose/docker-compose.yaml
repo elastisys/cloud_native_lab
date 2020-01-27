@@ -1,0 +1,22 @@
+version: '3.1'
+
+services:
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+    links:
+      - db
+
+  db:
+    image: mysql:8
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+
+  adminer_wait:
+    image: curlimages/curl
+    command: '--retry-connrefused --retry 20 http://adminer:8080'
+    links:
+      - adminer
