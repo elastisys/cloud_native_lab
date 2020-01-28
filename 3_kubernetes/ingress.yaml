@@ -9,4 +9,4 @@ spec:
         - path: /
           backend:
             serviceName: myapp
-            servicePort: 8080
+            servicePort: 3000
