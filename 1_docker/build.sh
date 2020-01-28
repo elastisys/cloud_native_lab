@@ -1,6 +1,6 @@
 #!/bin/bash
 
-: ${TAG:=$(git describe --always --tags)}
+: ${TAG:=$(cat package.json | jq -r .version)}
 
 docker build \
     -t cklein/node-hostname:$TAG \
