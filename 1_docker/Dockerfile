@@ -1,4 +1,4 @@
-FROM node:11
+FROM node:12.14.1-buster
 
 USER node
 RUN mkdir -p /home/node/app
