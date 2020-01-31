@@ -6,6 +6,8 @@ Topics:
 
 1. Docker
 2. Docker compose
-3. Minikube
-4. Kubernetes (Deployment, Service, Ingress)
-5. Helm (TBD)
+3. Minikube / Kubernetes (Deployment, Service, Ingress)
+4. Helm
+5. Storage in Kubernetes
+6. Configmaps and Secrets
+7. RBACs

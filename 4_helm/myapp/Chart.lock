@@ -1,0 +1,12 @@
+dependencies:
+- name: mysql
+  repository: https://kubernetes-charts.storage.googleapis.com
+  version: 1.6.2
+- name: prometheus
+  repository: https://kubernetes-charts.storage.googleapis.com
+  version: 10.4.0
+- name: grafana
+  repository: https://kubernetes-charts.storage.googleapis.com
+  version: 4.4.1
+digest: sha256:b762f478c12bdffbb8a885da266b6411696d1e910c758fdc0d33c5fd1e8e1bc1
+generated: "2020-01-31T10:37:24.236176846+01:00"
